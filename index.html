@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="latihdirixls: Platform latihan interaktif Microsoft Excel dari Dasar sampai Mahir (Basic to Pro) dengan penjelasan bilingual (ID/EN), spreadsheet interaktif, dan sertifikat kelulusan digital." />
+    <meta name="theme-color" content="#107C41" />
+    <title>latihdirixls | Latihan Interaktif Excel Basic sampai Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen">
+    <div id="root"></div>
+    <script>
+      // Clean up rogue service workers from other projects running on localhost
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
